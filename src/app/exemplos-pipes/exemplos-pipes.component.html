@@ -2,7 +2,7 @@
 </h5>
 
 
-<p>Titulo: {{ livro.titulo | uppercase }}</p>
+<p>Titulo: {{ livro.titulo | uppercase | camelCase }}</p>
 <p>Estrelas: {{ livro.rating | number: '1.1-1' }}</p>
 <p>Paginas:  {{ livro.numeroPaginas | number }}</p>
 <p>Preco: {{livro.preco | currency:'BRL'}}</p>
