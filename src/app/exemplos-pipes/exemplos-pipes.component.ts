@@ -15,5 +15,11 @@ export class ExemplosPipesComponent {
     dataLancamento: new Date(2016, 5, 23),
     url: 'https://a.co/d/ahwnBMc'
   }
+  livros: string[]= ['angular2', 'java']
+  filtro:string =''
 
+  addCurso(valor: string): void{
+    this.livros.push(valor)
+    console.log(this.livros)
+  }
 }
