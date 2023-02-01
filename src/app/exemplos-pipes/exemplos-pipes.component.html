@@ -21,3 +21,12 @@
 <ul>
     <li *ngFor="let liv of livros | filtroarray:filtro">{{ liv }}</li>
 </ul>
+<ul>
+    <li *ngFor="let liv of livros | filtroArrayPipeImpuro:filtro">{{ liv }}</li>
+</ul>
+
+
+<h5> certo  </h5>
+<ul>
+    <li *ngFor="let liv of obterCursos()">{{ liv }}</li>
+</ul>
